@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStick"]/ingredientValueGetterClass</xpath>
+		<value>
+			<ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStick"]/ingredients</xpath>
+		<value>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/ingredientValueGetterClass</xpath>
+		<value>
+			<ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/ingredients</xpath>
+		<value>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStick"]/displayPriority</xpath>
+		<value>
+			<displayPriority>88</displayPriority>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/displayPriority</xpath>
+		<value>
+			<displayPriority>89</displayPriority>
+		</value>
+	</Operation>
+	
+</Patch>
