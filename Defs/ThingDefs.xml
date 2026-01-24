@@ -4,10 +4,8 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>chrisb_moas_sticks</defName>
-		<label>meatless stick</label>
-		<description>A pointy stick made from wood. It does not contain any meat.
-
-It can be used to skewer and cook food at a campfire.</description>
+		<label>skewer</label>
+		<description>A pointy stick made from wood. It can be used to skewer and cook food at a campfire.</description>
 		<graphicData>
       <texPath>Items/chrisb_moas_stick</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -76,8 +74,8 @@ It can be used to skewer and cook food at a campfire.</description>
 
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_meatless</defName>
-    <label>cooked stick</label>
-    <description>A cooked stick roasted over a fire.
+    <label>cooked skewer</label>
+    <description>A cooked stick roasted over a fire. It does not hold any food, but you can still try eating it.
 		
 Some moments in life make one wonder, "in just what direction is my life going?"</description>
     <graphicData>

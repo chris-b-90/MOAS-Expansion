@@ -5,8 +5,8 @@
   <!-- Sticks -->
 	<RecipeDef>
 		<defName>chrisb_Craft_moas_sticks</defName>
-		<label>make meatless sticks from a log</label>
-		<description>Make sticks from a log.</description>
+		<label>make skewer sticks from a log</label>
+		<description>Make skewer sticks from a log.</description>
 		<displayPriority>1</displayPriority>
 		<workAmount>300</workAmount>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -42,7 +42,7 @@
     <defName>CookVegOnAStick</defName>
     <label>cook veg on a stick</label>
     <description>Cook raw veg over an open fire.</description>
-    <jobString>Cooking veg on a stick.</jobString>
+    <jobString>Cooking vegetable skewer.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -100,7 +100,7 @@
     <defName>CookVegOnAStick4</defName>
     <label>cook veg on a stick x4</label>
     <description>Cook raw veg over an open fire (x4).</description>
-    <jobString>Cooking 4 veg on a stick.</jobString>
+    <jobString>Cooking 4 vegetable skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -157,9 +157,9 @@
   <!-- Little meat -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookLittleMeatOnAStick</defName>
-    <label>cook a little bit of meat on a stick</label>
-    <description>Cook a little bit of meat over an open fire.</description>
-    <jobString>Cooking a little bit of meat on a stick.</jobString>
+    <label>cook a morsel of meat on a stick</label>
+    <description>Cook a morsel of meat over an open fire.</description>
+    <jobString>Cooking a morsel meat skewer.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -203,9 +203,9 @@
 
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookLittleMeatOnAStick4</defName>
-    <label>cook a little bit of meat on a stick x4</label>
-    <description>Cook a little bit of meat over an open fire (x4).</description>
-    <jobString>Cooking a little bit of meat on 4 sticks.</jobString>
+    <label>cook a morsel of meat on a stick x4</label>
+    <description>Cook a morsel of meat over an open fire (x4).</description>
+    <jobString>Cooking 4 morsel meat skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -250,9 +250,9 @@
   <!-- Meat and vegetables -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookBlendedMeatOnAStick</defName>
-    <label>cook a blend of meat and veg on a stick</label>
-    <description>Cook a blend of meat and veg over an open fire.</description>
-    <jobString>Cooking a blend of meat and veg on a stick.</jobString>
+    <label>cook meat and veg on a stick</label>
+    <description>Cook meat and veg over an open fire.</description>
+    <jobString>Cooking meat and veg skewer.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -311,9 +311,9 @@
 
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookBlendedMeatOnAStick4</defName>
-    <label>cook a blend of meat and veg on a stick x4</label>
-    <description>Cook a blend of meat and veg over an open fire (x4).</description>
-    <jobString>Cooking a blend of meat and veg on 4 sticks.</jobString>
+    <label>cook meat and veg on a stick x4</label>
+    <description>Cook meat and veg over an open fire (x4).</description>
+    <jobString>Cooking 4 meat and veg skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -374,8 +374,8 @@
   <RecipeDef>
     <defName>CookFishOnAStick</defName>
     <label>cook fish on a stick</label>
-    <description>Cook raw fish over an open fire.</description>
-    <jobString>Cooking fish on a stick.</jobString>
+    <description>Cook fish over an open fire.</description>
+    <jobString>Cooking fish skewer.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -423,8 +423,8 @@
   <RecipeDef>
     <defName>CookFishOnAStick4</defName>
     <label>cook fish on a stick x4</label>
-    <description>Cook raw fish over an open fire (x4).</description>
-    <jobString>Cooking 4 fish on a stick.</jobString>
+    <description>Cook fish over an open fire (x4).</description>
+    <jobString>Cooking 4 fish skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -473,8 +473,8 @@
   <RecipeDef>
     <defName>CookFruitOnAStick</defName>
     <label>cook fruit on a stick</label>
-    <description>Cook raw fruit over an open fire.</description>
-    <jobString>Cooking fruit on a stick.</jobString>
+    <description>Cook fruit over an open fire.</description>
+    <jobString>Cooking fruit skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -531,7 +531,7 @@
     <defName>CookFruitOnAStick4</defName>
     <label>cook fruit on a stick x4</label>
     <description>Cook raw fruit over an open fire (x4).</description>
-    <jobString>Cooking 4 fruit on a stick.</jobString>
+    <jobString>Cooking 4 fruit skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -588,8 +588,8 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>CookFungusOnAStick</defName>
     <label>cook mushroom on a stick</label>
-    <description>Cook raw mushrooms over an open fire.</description>
-    <jobString>Cooking veg on a stick.</jobString>
+    <description>Cook mushrooms over an open fire.</description>
+    <jobString>Cooking mushroom skewer.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -636,8 +636,8 @@
   <RecipeDef ParentName="CookMealBase">
     <defName>CookFungusOnAStick4</defName>
     <label>cook mushroom on a stick (x4)</label>
-    <description>Cook raw mushrooms over an open fire (x4).</description>
-    <jobString>Cooking 4 mushroom on a stick.</jobString>
+    <description>Cook mushrooms over an open fire (x4).</description>
+    <jobString>Cooking 4 mushroom skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -684,9 +684,9 @@
   <!-- Cooked sticks -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>moas_CookStick</defName>
-    <label>cook meatless vegless stick</label>
-    <description>Cook a meatless, vegless stick over a fire.</description>
-    <jobString>Cooking meatless, vegless stick.</jobString>
+    <label>cook stick</label>
+    <description>Cook a stick over a fire.</description>
+    <jobString>Cooking stick.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -722,9 +722,9 @@
 
 	<RecipeDef ParentName="CookMealBase">
     <defName>moas_CookStick4</defName>
-    <label>cook 4 meatless vegless sticks</label>
-    <description>Cook 4 meatless, vegless sticks over a fire.</description>
-    <jobString>Cooking 4 meatless, vegless sticks.</jobString>
+    <label>cook 4 sticks</label>
+    <description>Cook 4 sticks over a fire.</description>
+    <jobString>Cooking 4 sticks.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
