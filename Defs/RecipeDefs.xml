@@ -78,7 +78,7 @@
       <MeatOnAStick_fungus>1</MeatOnAStick_fungus>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>96</displayPriority>
+    <displayPriority>98</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
@@ -126,7 +126,7 @@
       <MeatOnAStick_fungus>4</MeatOnAStick_fungus>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>97</displayPriority>
+    <displayPriority>99</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
@@ -335,6 +335,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
+        <li>Fish</li>
         <li>PlantFoodRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
@@ -380,6 +381,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
+        <li>Fish</li>
         <li>PlantFoodRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
@@ -433,6 +435,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
+        <li>Fish</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
@@ -488,6 +491,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
+        <li>Fish</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
@@ -499,6 +503,55 @@
     </products>
     <workSkill>Cooking</workSkill>
     <displayPriority>95</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  	<RecipeDef>
+    <defName>CookFishOnAStick</defName>
+    <label>cook fish on a stick</label>
+    <description>Cook raw fish over an open fire.</description>
+    <jobString>Cooking fish on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Fish</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+				<li>Fish</li>
+			</categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+			<categories>
+				<li>Fish</li>
+			</categories>
+		</defaultIngredientFilter>
+    <products>
+      <MeatOnAStick_fish>1</MeatOnAStick_fish>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>96</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>

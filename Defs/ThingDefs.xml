@@ -7,7 +7,7 @@
 		<label>meatless stick</label>
 		<description>A pointy stick made from wood. It does not contain any meat.
 
-It can be used to skewer and cook food at a campfire, without burning your podgy little fingies.</description>
+It can be used to skewer and cook food at a campfire.</description>
 		<graphicData>
       <texPath>Items/chrisb_moas_stick</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -25,7 +25,7 @@ It can be used to skewer and cook food at a campfire, without burning your podgy
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_fungus</defName>
     <label>mushroom on a stick</label>
-    <description>Mushrooms skewered onto a meatless stick and roasted over a fire.</description>
+    <description>Mushrooms skewered onto a stick and roasted over a fire.</description>
     <graphicData>
       <texPath>Items/chrisb_moas_foas</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -51,7 +51,7 @@ It can be used to skewer and cook food at a campfire, without burning your podgy
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_veg</defName>
     <label>veg on a stick</label>
-    <description>Vegetables skewered onto a meatless stick and roasted over a fire.</description>
+    <description>Vegetables skewered onto a stick and roasted over a fire.</description>
     <graphicData>
       <texPath>Items/chrisb_moas_voas</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -76,8 +76,8 @@ It can be used to skewer and cook food at a campfire, without burning your podgy
 
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_meatless</defName>
-    <label>cooked meatless, vegless stick</label>
-    <description>A cooked meatless, vegless stick roasted over a fire.
+    <label>cooked stick</label>
+    <description>A cooked stick roasted over a fire.
 		
 Some moments in life make one wonder, "in just what direction is my life going?"</description>
     <graphicData>
@@ -105,7 +105,7 @@ Some moments in life make one wonder, "in just what direction is my life going?"
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_little</defName>
     <label>a little bit of meat on a stick</label>
-    <description>A little bit of meat skewered onto a meatless stick and roasted over a fire.</description>
+    <description>A little bit of meat skewered onto a stick and roasted over a fire.</description>
     <graphicData>
       <texPath>Items/chrisb_moas_little</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -122,7 +122,7 @@ Some moments in life make one wonder, "in just what direction is my life going?"
     </ingestible>
     <comps>
       <li Class="CompProperties_Ingredients">
-        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
       </li>
       <li Class="MeatOnAStick.CompProperties_NameGen"></li>
     </comps>
@@ -131,7 +131,7 @@ Some moments in life make one wonder, "in just what direction is my life going?"
 	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_blend</defName>
     <label>a blend of meat and veg on a stick</label>
-    <description>A blend of meat and vegetables skewered onto a meatless stick and roasted over a fire.</description>
+    <description>A blend of meat and vegetables skewered onto a stick and roasted over a fire.</description>
     <graphicData>
       <texPath>Items/chrisb_moas_blend</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -148,7 +148,33 @@ Some moments in life make one wonder, "in just what direction is my life going?"
     </ingestible>
     <comps>
       <li Class="CompProperties_Ingredients">
-        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+  	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_fish</defName>
+    <label>fish on a stick</label>
+    <description>Fish skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_fish</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
       </li>
       <li Class="MeatOnAStick.CompProperties_NameGen"></li>
     </comps>
