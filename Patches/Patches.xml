@@ -21,7 +21,7 @@
       </li>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/ingredientValueGetterClass</xpath>
 		<value>
@@ -54,6 +54,20 @@
 		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/displayPriority</xpath>
 		<value>
 			<displayPriority>89</displayPriority>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStick"]/fixedIngredientFilter/disallowedCategories</xpath>
+		<value>
+			<li>Fish</li>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="CookMeatOnAStickBulk"]/fixedIngredientFilter/disallowedCategories</xpath>
+		<value>
+			<li>Fish</li>
 		</value>
 	</Operation>
 	
