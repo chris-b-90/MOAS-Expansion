@@ -180,4 +180,30 @@ Some moments in life make one wonder, "in just what direction is my life going?"
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_fruit</defName>
+    <label>fruit on a stick</label>
+    <description>Fruit skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_fruit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
 </Defs>

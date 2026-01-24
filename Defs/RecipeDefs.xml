@@ -2,6 +2,7 @@
 
 <Defs>
 
+  <!-- Sticks -->
 	<RecipeDef>
 		<defName>chrisb_Craft_moas_sticks</defName>
 		<label>make meatless sticks from a log</label>
@@ -36,102 +37,7 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CookMealBase">
-    <defName>CookFungusOnAStick</defName>
-    <label>cook mushroom on a stick</label>
-    <description>Cook raw mushrooms over an open fire.</description>
-    <jobString>Cooking veg on a stick.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>0.5</count>
-      </li>
-			<li>
-        <filter>
-          <thingDefs>
-            <li>chrisb_moas_sticks</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-      </disallowedCategories>
-      <specialFiltersToDisallow>
-        <li>MOAS_RawVegNotFungus</li>
-      </specialFiltersToDisallow>
-    </fixedIngredientFilter>
-    <products>
-      <MeatOnAStick_fungus>1</MeatOnAStick_fungus>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <displayPriority>98</displayPriority>
-    <recipeUsers>
-			<li>Campfire</li>
-		</recipeUsers>
-  </RecipeDef>
-
-    <RecipeDef ParentName="CookMealBase">
-    <defName>CookFungusOnAStick4</defName>
-    <label>cook mushroom on a stick (x4)</label>
-    <description>Cook raw mushrooms over an open fire (x4).</description>
-    <jobString>Cooking 4 mushroom on a stick.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>2.0</count>
-      </li>
-			<li>
-        <filter>
-          <thingDefs>
-            <li>chrisb_moas_sticks</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-      </disallowedCategories>
-      <specialFiltersToDisallow>
-        <li>MOAS_RawVegNotFungus</li>
-      </specialFiltersToDisallow>
-    </fixedIngredientFilter>
-    <products>
-      <MeatOnAStick_fungus>4</MeatOnAStick_fungus>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <displayPriority>99</displayPriority>
-    <recipeUsers>
-			<li>Campfire</li>
-		</recipeUsers>
-  </RecipeDef>
-
+  <!-- Vegetables -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookVegOnAStick</defName>
     <label>cook veg on a stick</label>
@@ -165,16 +71,26 @@
       <disallowedCategories>
         <li>MeatRaw</li>
         <li>AnimalProductRaw</li>
+        <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
         <li>MOAS_RawFungus</li>
       </specialFiltersToDisallow>
+      <disallowedThingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
     <products>
       <MeatOnAStick_veg>1</MeatOnAStick_veg>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>92</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
@@ -213,97 +129,32 @@
       <disallowedCategories>
         <li>MeatRaw</li>
         <li>AnimalProductRaw</li>
+        <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
         <li>MOAS_RawFungus</li>
       </specialFiltersToDisallow>
+      <disallowedThingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </defaultIngredientFilter>
     <products>
       <MeatOnAStick_veg>4</MeatOnAStick_veg>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>93</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
   </RecipeDef>
 
-	<RecipeDef ParentName="CookMealBase">
-    <defName>moas_CookStick</defName>
-    <label>cook meatless vegless stick</label>
-    <description>Cook a meatless, vegless stick over a fire.</description>
-    <jobString>Cooking meatless, vegless stick.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
-    <ingredients>
-			<li>
-        <filter>
-          <thingDefs>
-            <li>chrisb_moas_sticks</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-				<li>PlantFoodRaw</li>
-      </disallowedCategories>
-    </fixedIngredientFilter>
-    <products>
-      <MeatOnAStick_meatless>1</MeatOnAStick_meatless>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <displayPriority>86</displayPriority>
-    <recipeUsers>
-			<li>Campfire</li>
-		</recipeUsers>
-  </RecipeDef>
-
-	<RecipeDef ParentName="CookMealBase">
-    <defName>moas_CookStick4</defName>
-    <label>cook 4 meatless vegless sticks</label>
-    <description>Cook 4 meatless, vegless sticks over a fire.</description>
-    <jobString>Cooking 4 meatless, vegless sticks.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
-    <ingredients>
-			<li>
-        <filter>
-          <thingDefs>
-            <li>chrisb_moas_sticks</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <disallowedCategories>
-        <li>MeatRaw</li>
-        <li>AnimalProductRaw</li>
-				<li>PlantFoodRaw</li>
-      </disallowedCategories>
-    </fixedIngredientFilter>
-    <products>
-      <MeatOnAStick_meatless>4</MeatOnAStick_meatless>
-    </products>
-    <workSkill>Cooking</workSkill>
-    <displayPriority>87</displayPriority>
-    <recipeUsers>
-			<li>Campfire</li>
-		</recipeUsers>
-  </RecipeDef>
-
+  <!-- Little meat -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookLittleMeatOnAStick</defName>
     <label>cook a little bit of meat on a stick</label>
@@ -344,7 +195,7 @@
       <MeatOnAStick_little>1</MeatOnAStick_little>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>90</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
@@ -390,12 +241,13 @@
       <MeatOnAStick_little>4</MeatOnAStick_little>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>91</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
   </RecipeDef>
 
+  <!-- Meat and vegetables -->
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookBlendedMeatOnAStick</defName>
     <label>cook a blend of meat and veg on a stick</label>
@@ -437,16 +289,21 @@
       <disallowedCategories>
         <li>Fish</li>
         <li>AnimalProductRaw</li>
+        <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
         <li>MOAS_RawFungus</li>
       </specialFiltersToDisallow>
+      <disallowedThingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_blend>1</MeatOnAStick_blend>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>94</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
@@ -493,22 +350,28 @@
       <disallowedCategories>
         <li>Fish</li>
         <li>AnimalProductRaw</li>
+        <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
       <specialFiltersToDisallow>
         <li>MOAS_RawFungus</li>
       </specialFiltersToDisallow>
+      <disallowedThingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_blend>4</MeatOnAStick_blend>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>95</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
   </RecipeDef>
 
-  	<RecipeDef>
+  <!-- Fish -->
+  <RecipeDef>
     <defName>CookFishOnAStick</defName>
     <label>cook fish on a stick</label>
     <description>Cook raw fish over an open fire.</description>
@@ -551,17 +414,17 @@
       <MeatOnAStick_fish>1</MeatOnAStick_fish>
     </products>
     <workSkill>Cooking</workSkill>
-    <displayPriority>96</displayPriority>
+    <displayPriority>97</displayPriority>
     <recipeUsers>
 			<li>Campfire</li>
 		</recipeUsers>
   </RecipeDef>
 
-    	<RecipeDef>
+  <RecipeDef>
     <defName>CookFishOnAStick4</defName>
     <label>cook fish on a stick x4</label>
     <description>Cook raw fish over an open fire (x4).</description>
-    <jobString>Cooking 4 fish on sticks.</jobString>
+    <jobString>Cooking 4 fish on a stick.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -598,6 +461,295 @@
 		</defaultIngredientFilter>
     <products>
       <MeatOnAStick_fish>4</MeatOnAStick_fish>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <!-- Fruit -->
+  <RecipeDef>
+    <defName>CookFruitOnAStick</defName>
+    <label>cook fruit on a stick</label>
+    <description>Cook raw fruit over an open fire.</description>
+    <jobString>Cooking fruit on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+				<li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
+			</categories>
+      <thingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </thingDefs>      
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+			<categories>
+				<li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
+			</categories>
+      <thingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </thingDefs>
+		</defaultIngredientFilter>
+    <products>
+      <MeatOnAStick_fruit>1</MeatOnAStick_fruit>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>CookFruitOnAStick4</defName>
+    <label>cook fruit on a stick x4</label>
+    <description>Cook raw fruit over an open fire (x4).</description>
+    <jobString>Cooking 4 fruit on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+				<li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
+			</categories>
+      <thingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+			<categories>
+				<li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
+			</categories>
+      <thingDefs>
+        <li>RawAgave</li>
+        <li>RawBerries</li>
+      </thingDefs>
+		</defaultIngredientFilter>
+    <products>
+      <MeatOnAStick_fruit>4</MeatOnAStick_fruit>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <!-- Fungus -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>CookFungusOnAStick</defName>
+    <label>cook mushroom on a stick</label>
+    <description>Cook raw mushrooms over an open fire.</description>
+    <jobString>Cooking veg on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawVegNotFungus</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_fungus>1</MeatOnAStick_fungus>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>CookFungusOnAStick4</defName>
+    <label>cook mushroom on a stick (x4)</label>
+    <description>Cook raw mushrooms over an open fire (x4).</description>
+    <jobString>Cooking 4 mushroom on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawVegNotFungus</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_fungus>4</MeatOnAStick_fungus>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <!-- Cooked sticks -->
+	<RecipeDef ParentName="CookMealBase">
+    <defName>moas_CookStick</defName>
+    <label>cook meatless vegless stick</label>
+    <description>Cook a meatless, vegless stick over a fire.</description>
+    <jobString>Cooking meatless, vegless stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_meatless>1</MeatOnAStick_meatless>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+    <defName>moas_CookStick4</defName>
+    <label>cook 4 meatless vegless sticks</label>
+    <description>Cook 4 meatless, vegless sticks over a fire.</description>
+    <jobString>Cooking 4 meatless, vegless sticks.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_meatless>4</MeatOnAStick_meatless>
     </products>
     <workSkill>Cooking</workSkill>
     <displayPriority>97</displayPriority>
