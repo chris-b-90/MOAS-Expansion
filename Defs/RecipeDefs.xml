@@ -36,6 +36,102 @@
 		</products>
 	</RecipeDef>
 
+  <RecipeDef ParentName="CookMealBase">
+    <defName>CookFungusOnAStick</defName>
+    <label>cook mushroom on a stick</label>
+    <description>Cook raw mushrooms over an open fire.</description>
+    <jobString>Cooking veg on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawVegNotFungus</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_fungus>1</MeatOnAStick_fungus>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>96</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
+    <RecipeDef ParentName="CookMealBase">
+    <defName>CookFungusOnAStick4</defName>
+    <label>cook mushroom on a stick (x4)</label>
+    <description>Cook raw mushrooms over an open fire (x4).</description>
+    <jobString>Cooking 4 mushroom on a stick.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>MOAS_Expansion.IngredientValueGetter_MeatlessStick</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+			<li>
+        <filter>
+          <thingDefs>
+            <li>chrisb_moas_sticks</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawVegNotFungus</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+      <MeatOnAStick_fungus>4</MeatOnAStick_fungus>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <displayPriority>97</displayPriority>
+    <recipeUsers>
+			<li>Campfire</li>
+		</recipeUsers>
+  </RecipeDef>
+
 	<RecipeDef ParentName="CookMealBase">
     <defName>CookVegOnAStick</defName>
     <label>cook veg on a stick</label>
@@ -70,6 +166,9 @@
         <li>MeatRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawFungus</li>
+      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_veg>1</MeatOnAStick_veg>
@@ -115,6 +214,9 @@
         <li>MeatRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawFungus</li>
+      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_veg>4</MeatOnAStick_veg>
@@ -333,6 +435,9 @@
       <disallowedCategories>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawFungus</li>
+      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_blend>1</MeatOnAStick_blend>
@@ -385,6 +490,9 @@
       <disallowedCategories>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>MOAS_RawFungus</li>
+      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <products>
       <MeatOnAStick_blend>4</MeatOnAStick_blend>

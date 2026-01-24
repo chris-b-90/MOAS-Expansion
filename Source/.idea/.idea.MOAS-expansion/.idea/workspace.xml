@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c31bf2e-177d-40c1-b587-55e0683413af" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Assemblies/MOAS Expansion.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/CopilotIndices/17.14.1231.31060/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/CopilotIndices/17.14.1231.31060/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/FileContentIndex/0296c770-91bb-4dba-8886-c10f830ec658.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/FileContentIndex/babf050d-a5a7-42d2-b719-77253372a812.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/.vs/MOAS Expansion/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/MOAS Expansion.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/MOAS Expansion.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/MOAS_MeatlessStick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/MOAS Expansion.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/MOAS Expansion.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/MOAS Expansion.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MOAS Expansion/obj/Debug/MOAS Expansion.dll" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="38frAetCDJ56a6X3pei230TkBgX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c31bf2e-177d-40c1-b587-55e0683413af" name="Changes" comment="" />
+      <created>1769201323881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769201323881</updated>
+      <workItem from="1769201324635" duration="563000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

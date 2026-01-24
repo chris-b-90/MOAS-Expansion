@@ -23,6 +23,32 @@ It can be used to skewer and cook food at a campfire, without burning your podgy
 	</ThingDef>
 
 	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_fungus</defName>
+    <label>mushroom on a stick</label>
+    <description>Mushrooms skewered onto a meatless stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_foas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
     <defName>MeatOnAStick_veg</defName>
     <label>veg on a stick</label>
     <description>Vegetables skewered onto a meatless stick and roasted over a fire.</description>
