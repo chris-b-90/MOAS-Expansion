@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Meat on a Stick - Expansion\Assemblies\MOAS Expansion.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Meat on a Stick - Expansion\Source\MOAS Expansion\obj\Debug\MOAS Expansion.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Meat on a Stick - Expansion\Source\MOAS Expansion\obj\Debug\MOAS Expansion.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Meat on a Stick - Expansion\Source\MOAS Expansion\obj\Debug\MOAS Expansion.dll
