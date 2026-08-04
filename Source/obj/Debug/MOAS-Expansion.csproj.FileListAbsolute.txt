@@ -1,0 +1,9 @@
+C:\Users\chris\Desktop\MOAS-Expansion\Assemblies\MOAS_Expansion.dll
+C:\Users\chris\Desktop\MOAS-Expansion\Assemblies\MOAS_Expansion.pdb
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS-Expansion.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS-Expansion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS-Expansion.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS-Expansion.AssemblyInfo.cs
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS-Expansion.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS_Expansion.dll
+C:\Users\chris\Desktop\MOAS-Expansion\Source\obj\Debug\MOAS_Expansion.pdb
