@@ -186,7 +186,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
-        <li>Fish</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
         <li>PlantFoodRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
@@ -232,7 +232,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
-        <li>Fish</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
         <li>PlantFoodRaw</li>
         <li>AnimalProductRaw</li>
       </disallowedCategories>
@@ -287,7 +287,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
-        <li>Fish</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
         <li>AnimalProductRaw</li>
         <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
@@ -348,7 +348,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <disallowedCategories>
-        <li>Fish</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
         <li>AnimalProductRaw</li>
         <li MayRequire="vanillaexpanded.vplantse">VCE_Fruit</li>
       </disallowedCategories>
@@ -371,7 +371,7 @@
   </RecipeDef>
 
   <!-- Fish -->
-  <RecipeDef>
+  <RecipeDef MayRequireAnyOf="Ludeon.RimWorld.Odyssey,vanillaexpanded.vcef">
     <defName>CookFishOnAStick</defName>
     <label>cook fish on a stick</label>
     <description>Cook fish over an open fire.</description>
@@ -386,7 +386,7 @@
       <li>
         <filter>
           <categories>
-            <li>Fish</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
           </categories>
         </filter>
         <count>0.5</count>
@@ -402,12 +402,12 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-				<li>Fish</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
 			</categories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
 			<categories>
-				<li>Fish</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
 			</categories>
 		</defaultIngredientFilter>
     <products>
@@ -420,7 +420,7 @@
 		</recipeUsers>
   </RecipeDef>
 
-  <RecipeDef>
+  <RecipeDef MayRequireAnyOf="Ludeon.RimWorld.Odyssey,vanillaexpanded.vcef">
     <defName>CookFishOnAStick4</defName>
     <label>cook fish on a stick x4</label>
     <description>Cook fish over an open fire (x4).</description>
@@ -435,7 +435,7 @@
       <li>
         <filter>
           <categories>
-            <li>Fish</li>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
           </categories>
         </filter>
         <count>2.0</count>
@@ -451,12 +451,12 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-				<li>Fish</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
 			</categories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
 			<categories>
-				<li>Fish</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Fish</li>
 			</categories>
 		</defaultIngredientFilter>
     <products>
@@ -545,7 +545,7 @@
             <li>PlantFoodRaw</li>
           </categories>
         </filter>
-        <count>0.5</count>
+        <count>2</count>
       </li>
 			<li>
         <filter>
@@ -635,7 +635,7 @@
 
   <RecipeDef ParentName="CookMealBase">
     <defName>CookFungusOnAStick4</defName>
-    <label>cook mushroom on a stick (x4)</label>
+    <label>cook mushroom on a stick x4</label>
     <description>Cook mushrooms over an open fire (x4).</description>
     <jobString>Cooking 4 mushroom skewers.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>

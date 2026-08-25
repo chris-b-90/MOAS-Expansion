@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\Desktop\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\Desktop\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Desktop\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj",
         "projectName": "MOAS_Expansion",
-        "projectPath": "C:\\Users\\chris\\Desktop\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MOAS-Expansion\\Source\\MOAS-Expansion.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Desktop\\MOAS-Expansion\\Source\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MOAS-Expansion\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net472": {
@@ -50,7 +51,7 @@
               "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\chris\\.dotnet\\sdk\\8.0.417\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\chris\\.dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -152,7 +152,7 @@ Some moments in life make one wonder, "in just what direction is my life going?"
     </comps>
   </ThingDef>
 
-  	<ThingDef ParentName="MealCookedIngredientless">
+  	<ThingDef ParentName="MealCookedIngredientless" MayRequireAnyOf="Ludeon.RimWorld.Odyssey,vanillaexpanded.vcef">
     <defName>MeatOnAStick_fish</defName>
     <label>fish on a stick</label>
     <description>Fish skewered onto a stick and roasted over a fire.</description>

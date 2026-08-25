@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookLittleMeatOnAStick"]/fixedIngredientFilter/disallowedCategories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookLittleMeatOnAStick4"]/fixedIngredientFilter/disallowedCategories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookBlendedMeatOnAStick"]/fixedIngredientFilter/disallowedCategories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookBlendedMeatOnAStick4"]/fixedIngredientFilter/disallowedCategories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick"]/ingredients/li/filter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick"]/fixedIngredientFilter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick"]/defaultIngredientFilter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick4"]/ingredients/li/filter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick4"]/fixedIngredientFilter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="CookFishOnAStick4"]/defaultIngredientFilter/categories/li[@MayRequire="Ludeon.RimWorld.Odyssey"]</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+    </value>
+  </Operation>
+
+</Patch>
