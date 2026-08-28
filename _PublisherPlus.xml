@@ -2,7 +2,7 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>Assemblies\MOAS_Expansion.pdb</exclude>
+    <exclude>.idea</exclude>
     <exclude>MOAS-Expansion.sln</exclude>
     <exclude>Source</exclude>
   </Excluded>

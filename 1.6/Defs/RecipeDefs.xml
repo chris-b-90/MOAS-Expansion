@@ -101,6 +101,7 @@
     <label>cook veg on a stick x4</label>
     <description>Cook raw veg over an open fire (x4).</description>
     <jobString>Cooking 4 vegetable skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -206,6 +207,7 @@
     <label>cook a morsel of meat on a stick x4</label>
     <description>Cook a morsel of meat over an open fire (x4).</description>
     <jobString>Cooking 4 morsel meat skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -314,6 +316,7 @@
     <label>cook meat and veg on a stick x4</label>
     <description>Cook meat and veg over an open fire (x4).</description>
     <jobString>Cooking 4 meat and veg skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -425,6 +428,7 @@
     <label>cook fish on a stick x4</label>
     <description>Cook fish over an open fire (x4).</description>
     <jobString>Cooking 4 fish skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -532,6 +536,7 @@
     <label>cook fruit on a stick x4</label>
     <description>Cook raw fruit over an open fire (x4).</description>
     <jobString>Cooking 4 fruit skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -638,6 +643,7 @@
     <label>cook mushroom on a stick x4</label>
     <description>Cook mushrooms over an open fire (x4).</description>
     <jobString>Cooking 4 mushroom skewers.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -725,6 +731,7 @@
     <label>cook 4 sticks</label>
     <description>Cook 4 sticks over a fire.</description>
     <jobString>Cooking 4 sticks.</jobString>
+    <workAmount>760</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
