@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>MOAS_Expansion</RootNamespace>
+    <AssemblyName>MOAS_Expansion</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>../Assemblies</OutputPath>
+    <DebugType>portable</DebugType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+</Project>

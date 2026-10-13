@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>chrisb_moas_sticks</defName>
+		<label>skewer</label>
+		<description>A pointy stick made from wood. It can be used to skewer and cook food at a campfire.</description>
+		<graphicData>
+      <texPath>Items/chrisb_moas_stick</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+			<Mass>0.0008</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_fungus</defName>
+    <label>mushroom on a stick</label>
+    <description>Mushrooms skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_foas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_veg</defName>
+    <label>veg on a stick</label>
+    <description>Vegetables skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_voas</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_meatless</defName>
+    <label>cooked skewer</label>
+    <description>A cooked stick roasted over a fire. It does not hold any food, but you can still try eating it.
+		
+Some moments in life make one wonder, "in just what direction is my life going?"</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_meatless</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.01</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteMeatlessStick</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_little</defName>
+    <label>a little bit of meat on a stick</label>
+    <description>A little bit of meat skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_little</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.45</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_blend</defName>
+    <label>a blend of meat and veg on a stick</label>
+    <description>A blend of meat and vegetables skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_blend</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+  	<ThingDef ParentName="MealCookedIngredientless" MayRequireAnyOf="Ludeon.RimWorld.Odyssey,vanillaexpanded.vcef">
+    <defName>MeatOnAStick_fish</defName>
+    <label>fish on a stick</label>
+    <description>Fish skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_fish</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealCookedIngredientless">
+    <defName>MeatOnAStick_fruit</defName>
+    <label>fruit on a stick</label>
+    <description>Fruit skewered onto a stick and roasted over a fire.</description>
+    <graphicData>
+      <texPath>Items/chrisb_moas_fruit</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <WorkToMake>190</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="MeatOnAStick.CompProperties_NameGen"></li>
+    </comps>
+  </ThingDef>
+
+</Defs>

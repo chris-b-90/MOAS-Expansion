@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <SpecialThingFilterDef>
+    <defName>MOAS_RawFungus</defName>
+    <label>raw fungus foods</label>
+    <description>Allow only raw vegetable foods tagged as fungus.</description>
+    <parentCategory>Foods</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>rawFungus</saveKey>
+    <configurable>false</configurable>
+    <workerClass>MOAS_Expansion.SpecialThingFilterWorker_MOAS_RawFungus</workerClass>
+  </SpecialThingFilterDef>
+  <SpecialThingFilterDef>
+    <defName>MOAS_RawVegNotFungus</defName>
+    <label>only fungus food</label>
+    <description>Allow only raw vegetable foods not tagged as fungus.</description>
+    <parentCategory>Foods</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>rawVegNoFungus</saveKey>
+    <configurable>false</configurable>
+    <workerClass>MOAS_Expansion.SpecialThingFilterWorker_MOAS_RawVegNotFungus</workerClass>
+  </SpecialThingFilterDef>
+</Defs>
